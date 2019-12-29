@@ -1,0 +1,83 @@
+.page-fonts{
+  grid-area: Fonts;
+  width: 403px;
+  height: 321px;
+
+  .font-block{
+    display: grid;
+    grid-template-columns: auto 30px auto;
+    grid-template-rows: auto;
+    grid-row-gap: 50px;
+    grid-template-areas:
+      "tag_name_1 . description_1"
+      "tag_name_2 . description_2"
+      "tag_name_3 . description_3"
+      "tag_name_4 . description_4";
+
+    &__tag-name-1{
+      grid-area: tag_name_1;
+      justify-self: end;
+      align-self: start;
+
+      font: 24px/29px 'Montserrat-regular';
+      color: $projectColorFontInputSelect;
+    }
+    &__tag-name-2{
+      grid-area: tag_name_2;
+      justify-self: end;
+      align-self: start;
+
+      font: 19px/23px 'Montserrat-regular';
+      color: $projectColorFontInputSelect;
+    }
+    &__tag-name-3{
+      grid-area: tag_name_3;
+      justify-self: end;
+      align-self: start;
+
+      font: 12px/15px 'Montserrat-regular';
+      color: $projectColorFontInputSelect;
+    }
+    &__tag-name-4{
+      grid-area: tag_name_4;
+      justify-self: end;
+      align-self: start;
+
+      font: 14px/24px 'Montserrat-regular';
+      color: $projectColorFontInputSelect;
+    }
+    &__description-1{
+      grid-area: description_1;
+      justify-self: start;
+      align-self: start;
+
+      font: 24px/38px 'Quicksand-bold';
+      color: $projectColorFontHeaders;
+    }
+    &__description-2{
+      grid-area: description_2;
+      justify-self: start;
+      align-self: start;
+
+      font: 19px/24px 'Quicksand-bold';
+      color: $projectColorFontHeaders;
+    }
+    &__description-3{
+      grid-area: description_3;
+      justify-self: start;
+      align-self: start;
+
+      font: 12px/15px 'Montserrat-bold';
+      text-transform: uppercase;
+      color: $projectColorFontHeaders;
+    }
+    &__description-4{
+      grid-area: description_4;
+      justify-self: start;
+      align-self: start;
+
+      font: 14px/24px 'Montserrat-regular';
+      color: $projectColorFontText;
+    }
+  }
+}

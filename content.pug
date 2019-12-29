@@ -1,0 +1,23 @@
+extends main.pug
+include color-block.pug
+include font-block.pug
+include svg_logo.pug
+
+block variables
+  -var pageTitle = "Colors & Type"
+  -var pageStyle = "content.css"
+  -var color_description = ["Dark Shade 100%", "Dark Shade 75%", "Dark Shade 50%", "Dark Shade 25%", "Dark Shade 5%", "Purple", "Green"]
+  -var color_index = ["#1F2041", "#1F2041", "#1F2041", "#1F2041", "#1F2041", "#BC9CFF", "#6FCE97"]
+  -var font_tag_name = ['H1', 'H2', 'H3', 'Body']
+  -var font_description = ['This one is the sub-section or widget title', 'Next one is the item title inside widgets', 'This is a label or CTA text', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.']
+
+block content
+  .logo
+    +svg_logo
+  .page-colors
+    -for (let i=0; i<color_description.length; i++)
+      +color-block(color_description[i], color_index[i], i+1)
+  .page-fonts
+    .font-block
+      -for (let i=0; i<font_tag_name.length; i++)
+        +font-block(font_tag_name[i], font_description[i], i+1)

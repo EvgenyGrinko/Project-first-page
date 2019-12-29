@@ -1,0 +1,8 @@
+//-This is a simple block, presenting one color of the project
+mixin color-block(colorName, colorIndex, colorNumber)
+  .color-block
+    div(class='color-block__rectangle' class='color-block__rectangle-' + colorNumber)
+    .color-block__description
+      .color-block__color-name= colorName
+      .color-block__color-index= colorIndex
+  

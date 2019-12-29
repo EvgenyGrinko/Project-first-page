@@ -1,0 +1,14 @@
+$project-colorDarkShade100 : rgba(31, 32, 65, 1.0); //!global
+$projectColorDhade75 : rgba(31, 32, 65, 0.75); // !global
+$projectColorDhade50 : rgba(31, 32, 65, 0.5); // !global
+$projectColorDhade25 : rgba(31, 32, 65, 0.25); // !global
+$projectColorDhade5 : rgba(31, 32, 65, 0.05); // !global
+$projectColorPurple : #BC9CFF; // !global
+$projectColorGreen : #6FCF97; // !global
+$projectColorFontHeaders : #1F2041; // !global
+$projectColorFontText : rgba(31, 32, 65, 0.75); // !global
+$projectColorFontInputSelect : rgba(31, 32, 65, 0.25); // !global
+$projectColorFontInfo : rgba(31, 32, 65, 0.5); // !global
+$color-list: rgba(31, 32, 65, 1), rgba(31, 32, 65, 0.75), rgba(31, 32, 65, 0.5), rgba(31, 32, 65, 0.25), rgba(31, 32, 65, 0.05), #BC9CFF, #6FCF97;
+$colors-number: length($color-list);
+$pageBackground: #FFFFFF;

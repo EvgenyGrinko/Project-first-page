@@ -1,0 +1,64 @@
+@import "global";
+@import "fonts";
+@import "page-fonts";
+
+body{
+  display: grid;
+  grid-template-columns: 30px 48px 72px auto 427px auto 191px;
+  grid-template-rows: 30px 48px 67px auto;
+  grid-template-areas:
+    ". . . . . . ."
+    ". Logo . . . . ."
+    ". . . . . . ."
+    ". . . Colors . Fonts .";
+
+  background: $pageBackground;
+}
+
+.logo{
+  grid-area: Logo;
+}
+
+.page-colors{
+  grid-area: Colors;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .color-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font: 19px/29px 'Quicksand-regular';
+
+    &:nth-child(7){
+       margin-bottom: 0;
+    }
+
+    &__rectangle{
+      width: 70px;
+      height: 70px;
+      border-radius: 6px;
+      margin-right: 40px;
+
+      @for $i from 1 through $colors-number{
+        &-#{$i}{
+          background-color: nth($color-list, $i);
+        }
+      }
+    }
+    &__color-name{
+      font: 19px/29px 'Quicksand-bold';
+    }
+  }
+}
+
+
+
+
+// .color-block .color-block__description .color-block__color-index{
+//   font-weight: normal;
+// }

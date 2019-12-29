@@ -1,0 +1,170 @@
+/* quicksand-regular - latin */
+@font-face {
+  font-family: "Quicksand-regular";
+  font-style: normal;
+  src: url("fonts/quicksand-regular/quicksand-v19-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("fonts/quicksand-regular/quicksand-v19-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/quicksand-regular/quicksand-v19-latin-regular.woff2") format("woff2"), url("fonts/quicksand-regular/quicksand-v19-latin-regular.woff") format("woff"), url("fonts/quicksand-regular/quicksand-v19-latin-regular.ttf") format("truetype"), url("fonts/quicksand-regular/quicksand-v19-latin-regular.svg#Quicksand") format("svg");
+  /* Legacy iOS */
+}
+/* quicksand-700 - latin */
+@font-face {
+  font-family: "Quicksand-bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/quicksand-bold/quicksand-v19-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("fonts/quicksand-bold/quicksand-v19-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/quicksand-bold/quicksand-v19-latin-700.woff2") format("woff2"), url("fonts/quicksand-bold/quicksand-v19-latin-700.woff") format("woff"), url("fonts/quicksand-bold/quicksand-v19-latin-700.ttf") format("truetype"), url("fonts/quicksand-bold/quicksand-v19-latin-700.svg#Quicksand") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat-regular";
+  font-style: normal;
+  src: url("fonts/montserrat-regular/montserrat-v14-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("fonts/montserrat-regular/montserrat-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-regular/montserrat-v14-latin-regular.woff2") format("woff2"), url("fonts/montserrat-regular/montserrat-v14-latin-regular.woff") format("woff"), url("fonts/montserrat-regular/montserrat-v14-latin-regular.ttf") format("truetype"), url("fonts/montserrat-regular/montserrat-v14-latin-regular.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat-bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/montserrat-bold/montserrat-v14-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("fonts/montserrat-bold/montserrat-v14-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-bold/montserrat-v14-latin-700.woff2") format("woff2"), url("fonts/montserrat-bold/montserrat-v14-latin-700.woff") format("woff"), url("fonts/montserrat-bold/montserrat-v14-latin-700.ttf") format("truetype"), url("fonts/montserrat-bold/montserrat-v14-latin-700.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+.page-fonts {
+  grid-area: Fonts;
+  width: 403px;
+  height: 321px;
+}
+.page-fonts .font-block {
+  display: grid;
+  grid-template-columns: auto 30px auto;
+  grid-template-rows: auto;
+  grid-row-gap: 50px;
+  grid-template-areas: "tag_name_1 . description_1" "tag_name_2 . description_2" "tag_name_3 . description_3" "tag_name_4 . description_4";
+}
+.page-fonts .font-block__tag-name-1 {
+  grid-area: tag_name_1;
+  justify-self: end;
+  align-self: start;
+  font: 24px/29px "Montserrat-regular";
+  color: rgba(31, 32, 65, 0.25);
+}
+.page-fonts .font-block__tag-name-2 {
+  grid-area: tag_name_2;
+  justify-self: end;
+  align-self: start;
+  font: 19px/23px "Montserrat-regular";
+  color: rgba(31, 32, 65, 0.25);
+}
+.page-fonts .font-block__tag-name-3 {
+  grid-area: tag_name_3;
+  justify-self: end;
+  align-self: start;
+  font: 12px/15px "Montserrat-regular";
+  color: rgba(31, 32, 65, 0.25);
+}
+.page-fonts .font-block__tag-name-4 {
+  grid-area: tag_name_4;
+  justify-self: end;
+  align-self: start;
+  font: 14px/24px "Montserrat-regular";
+  color: rgba(31, 32, 65, 0.25);
+}
+.page-fonts .font-block__description-1 {
+  grid-area: description_1;
+  justify-self: start;
+  align-self: start;
+  font: 24px/38px "Quicksand-bold";
+  color: #1F2041;
+}
+.page-fonts .font-block__description-2 {
+  grid-area: description_2;
+  justify-self: start;
+  align-self: start;
+  font: 19px/24px "Quicksand-bold";
+  color: #1F2041;
+}
+.page-fonts .font-block__description-3 {
+  grid-area: description_3;
+  justify-self: start;
+  align-self: start;
+  font: 12px/15px "Montserrat-bold";
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.page-fonts .font-block__description-4 {
+  grid-area: description_4;
+  justify-self: start;
+  align-self: start;
+  font: 14px/24px "Montserrat-regular";
+  color: rgba(31, 32, 65, 0.75);
+}
+
+body {
+  display: grid;
+  grid-template-columns: 30px 48px 72px auto 427px auto 191px;
+  grid-template-rows: 30px 48px 67px auto;
+  grid-template-areas: ". . . . . . ." ". Logo . . . . ." ". . . . . . ." ". . . Colors . Fonts .";
+  background: #FFFFFF;
+}
+
+.logo {
+  grid-area: Logo;
+}
+
+.page-colors {
+  grid-area: Colors;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.page-colors .color-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font: 19px/29px "Quicksand-regular";
+}
+.page-colors .color-block:nth-child(7) {
+  margin-bottom: 0;
+}
+.page-colors .color-block__rectangle {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+.page-colors .color-block__rectangle-1 {
+  background-color: #1f2041;
+}
+.page-colors .color-block__rectangle-2 {
+  background-color: rgba(31, 32, 65, 0.75);
+}
+.page-colors .color-block__rectangle-3 {
+  background-color: rgba(31, 32, 65, 0.5);
+}
+.page-colors .color-block__rectangle-4 {
+  background-color: rgba(31, 32, 65, 0.25);
+}
+.page-colors .color-block__rectangle-5 {
+  background-color: rgba(31, 32, 65, 0.05);
+}
+.page-colors .color-block__rectangle-6 {
+  background-color: #BC9CFF;
+}
+.page-colors .color-block__rectangle-7 {
+  background-color: #6FCF97;
+}
+.page-colors .color-block__color-name {
+  font: 19px/29px "Quicksand-bold";
+}
+
+/*# sourceMappingURL=content.css.map */
